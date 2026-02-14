@@ -85,13 +85,16 @@ body {
 .main-card {
     width: 90%;
     max-width: 450px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 28px;
     padding: 40px 30px;
-    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
-    border: 1px solid rgba(255,255,255,0.5);
     text-align: center;
+
+    /* Visible border */
+    border: 2px solid #e5d4ff;
+
+    /* Soft shadow */
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
 }
 
 /* Title */
@@ -105,7 +108,7 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 18px;
 }
 
 /* Boxes */
@@ -297,6 +300,7 @@ body {
         opacity: 1;
     }
 }
+
 
 
 
