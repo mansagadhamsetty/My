@@ -5,6 +5,15 @@ body {
     overflow-x: hidden;
 }
 
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f9f3ff, #fff7fb);
+    padding: 20px;
+}
+
 /* Center entire page */
 .center-page {
     display: flex;
@@ -95,6 +104,7 @@ body {
 
     /* Soft shadow */
     box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    position: relative;
 }
 
 /* Title */
@@ -300,6 +310,7 @@ body {
         opacity: 1;
     }
 }
+
 
 
 
