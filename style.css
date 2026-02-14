@@ -78,8 +78,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly; /* spreads title + boxes evenly */
     align-items: center;
-    padding-top: 90px;
+    padding: 20px;
 }
 
 /* Title */
@@ -94,23 +95,21 @@ body {
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    width: 80%;
-    max-width: 400px;
+    gap: 28px;
+    width: 85%;
+    max-width: 420px;
 }
 
 /* Boxes */
 .menu-box {
     text-decoration: none;
-    padding: 18px;
-    border-radius: 18px;
+    padding: 22px;
+    border-radius: 22px;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 1.15rem; /* increased */
     font-weight: 500;
     color: #4b3f5c;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: 0.3s ease;
 }
 
@@ -132,8 +131,7 @@ body {
 }
 
 .menu-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
 }
 
 /* Back Button */
@@ -292,5 +290,6 @@ body {
         opacity: 1;
     }
 }
+
 
 
