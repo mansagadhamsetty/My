@@ -77,40 +77,51 @@ body {
 .home-container {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; /* spreads title + boxes evenly */
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
+.main-card {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 28px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+
 /* Title */
 .main-title {
-    font-size: 2.2rem;
-    margin-bottom: 50px;
+    font-size: 2.3rem;
     color: #4b3f5c;
-    text-align: center;
+    margin-bottom: 35px; /* controlled spacing */
 }
 
 /* Vertical Menu */
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    width: 85%;
-    max-width: 420px;
+    gap: 22px;
 }
 
 /* Boxes */
 .menu-box {
     text-decoration: none;
-    padding: 22px;
-    border-radius: 22px;
-    text-align: center;
-    font-size: 1.15rem; /* increased */
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.15rem;
     font-weight: 500;
     color: #4b3f5c;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     transition: 0.3s ease;
+}
+
+.menu-box:hover {
+    transform: translateY(-4px);
 }
 
 /* Soft pastel variations */
@@ -128,10 +139,6 @@ body {
 
 .menu-box:nth-child(4) {
     background: #fff0dc;
-}
-
-.menu-box:hover {
-    transform: translateY(-5px);
 }
 
 /* Back Button */
@@ -290,6 +297,7 @@ body {
         opacity: 1;
     }
 }
+
 
 
 
