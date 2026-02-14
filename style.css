@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom, #f9f3ff, #fff7fb);
+    overflow-x: hidden;
+}
+
+/* Center entire page */
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f9f3ff, #fff7fb);
+    font-family: 'Playfair Display', serif;
+}
+
+/* Password Card */
+.password-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    backdrop-filter: blur(10px);
+}
+
+/* Title */
+.password-card .main-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4b3f5c;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    color: #7a6f87;
+}
+
+/* Input */
+.password-card input {
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    margin-bottom: 15px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.password-card button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    background: #eadcff;
+    color: #4b3f5c;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.password-card button:hover {
+    background: #d8c5ff;
+}
+
+/* Error */
+#error {
+    color: #c55;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+
+/* Container */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+
+/* Title */
+.main-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: #4b3f5c;
+    text-align: center;
+}
+
+/* Vertical Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Boxes */
+.menu-box {
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #4b3f5c;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+/* Soft pastel variations */
+.menu-box:nth-child(1) {
+    background: #eadcff;
+}
+
+.menu-box:nth-child(2) {
+    background: #ffdfe8;
+}
+
+.menu-box:nth-child(3) {
+    background: #dff2ff;
+}
+
+.menu-box:nth-child(4) {
+    background: #fff0dc;
+}
+
+.menu-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: #f3e8ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #4b3f5c;
+    font-size: 0.9rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Floating Hearts */
+.hearts::before,
+.hearts::after {
+    content: "❤ ❤ ❤ ❤ ❤";
+    position: fixed;
+    bottom: -50px;
+    font-size: 20px;
+    color: rgba(255, 182, 193, 0.4);
+    animation: floatHearts 15s linear infinite;
+}
+
+.hearts::after {
+    left: 60%;
+    animation-duration: 20s;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-110vh); }
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeInPage 1.5s ease forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Story Layout */
+.story-content {
+    max-width: 750px;
+    padding: 20px;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    color: #4b3f5c;
+}
+
+/* Paragraph spacing */
+.story-content p {
+    margin-bottom: 28px;
+    text-align: left; /* More mature journal feel */
+}
+
+/* Images between paragraphs */
+.story-image {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease;
+}
+
+.story-image:hover {
+    transform: scale(1.02);
+}
+
+/* Scroll Container */
+.scroll-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Scroll Paper */
+.scroll {
+    width: 90%;
+    max-width: 700px;
+    background: #fffaf0;
+    border-radius: 12px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transform-origin: top;
+    animation: unroll 1.8s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top roll effect */
+.scroll::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #f3e5d8;
+    border-radius: 50%;
+}
+
+/* Bottom roll effect */
+.scroll::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #f3e5d8;
+    border-radius: 50%;
+}
+
+/* Unroll animation */
+@keyframes unroll {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* Scroll Text */
+.scroll-content {
+    opacity: 0;
+    animation: textFade 2s ease forwards;
+    animation-delay: 1.8s;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #5a4a63;
+    text-align: left;
+}
+
+@keyframes textFade {
+    to {
+        opacity: 1;
+    }
+}
+
+

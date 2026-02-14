@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center-page">
+
+    <div class="password-card">
+        <h1 class="main-title">For Someone Special 💝</h1>
+        <p class="subtitle">Enter the secret word 🔑</p>
+        <input type="password" id="pwd" placeholder="password">
+        <button onclick="checkPwd()">Enter 💌</button>
+        <p id="error"></p>
+    </div>
+
+<script>
+function checkPwd() {
+    const pwd = document.getElementById("pwd").value;
+    if (pwd === "nima") {
+        window.location.href = "home.html";
+    } else {
+        document.getElementById("error").innerText = "Wrong password";
+    }
+}
+</script>
+
+</body>
+</html>
